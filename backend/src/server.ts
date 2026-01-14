@@ -7,7 +7,7 @@ const app = Fastify({ logger: true })
 await app.register(cors, {
   origin: 'http://localhost:3000',
   credentials: true,
-})
+})  
  
 await app.register(jwt, {
   secret: 'super-secret-key',
